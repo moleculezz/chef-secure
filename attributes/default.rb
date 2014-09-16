@@ -19,8 +19,8 @@
 # limitations under the License.
 #
 
-default['openssh']['server']['login_grace_time'] = "1m"
-default['openssh']['server']['server_key_bits'] = "768"
-default['openssh']['server']['password_authentication'] = "no"
-default['openssh']['server']['permit_root_login'] = "no"
-default['openssh']['server']['subsystem'] = "sftp	/usr/lib/sftp-server"
+default.openssh.server.login_grace_time = "1m"
+default.openssh.server.server_key_bits = "768"
+default.openssh.server.password_authentication = "no"
+default.openssh.server.permit_root_login = "no"
+default.openssh.server.subsystem = "sftp	/usr/lib/sftp-server"

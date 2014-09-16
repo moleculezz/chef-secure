@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+  - name: debian-7.6
+
+suites:
+  - name: secure
+    run_list:
+      - recipe[secure::default]
+    attributes:
+      authorization: { sudo: { users: ["vagrant"]}}
